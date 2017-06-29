@@ -9,7 +9,95 @@ $(document).ready(function() {
 	
 	var played = false;
 //================cells================
+	var bgimg = document.getElementById('bg_img');
+	
+	//alert(bgimg.naturalHeight);
+	var ratio = 3641/675;
+	var lastHeight = 0;
 
+	var itemOne = $('#itemone');
+	var itemTwo = $('#itemtwo');
+	var itemThree = $('#itemthree');
+	
+	var bubbleOne = $('#bubbleone');
+	var bubbleTwo = $('#bubbletwo');
+	var bubbleThree = $('#bubblethree');
+	
+	function pxToFloat(pxVal)
+	{
+		return parseFloat(pxVal.substr(0, pxVal.indexOf('px')));
+	}
+	
+	var xPosOne = pxToFloat(itemOne.css('left'))/675;
+	var yPosOne = pxToFloat(itemOne.css('top'))/675;
+	var widthOne = pxToFloat(itemOne.css('width'))/675;
+
+	var xPosTwo = pxToFloat(itemTwo.css('left'))/675;
+	var yPosTwo = pxToFloat(itemTwo.css('top'))/675;
+	var widthTwo = pxToFloat(itemTwo.css('width'))/675;
+	//var heightTwo = 0;
+	
+	var xPosThree = pxToFloat(itemThree.css('left'))/675;
+	var yPosThree = pxToFloat(itemThree.css('top'))/675;
+	var widthThree = pxToFloat(itemThree.css('width'))/675;
+	//var heightThree = 0;
+	
+	var xPosOneBubble =  pxToFloat(bubbleOne.css('left'))/675;
+	var yPosOneBubble =  pxToFloat(bubbleOne.css('top'))/675;
+	var widthOneBubble =  pxToFloat(bubbleOne.css('width'))/675;
+	//var heightOneBubble = 0;
+
+	var xPosTwoBubble =  pxToFloat(bubbleTwo.css('left'))/675;
+	var yPosTwoBubble =  pxToFloat(bubbleTwo.css('top'))/675;
+	var widthTwoBubble =  pxToFloat(bubbleTwo.css('width'))/675;
+	//var heightTwoBubble = 0;
+	
+	var xPosThreeBubble =  pxToFloat(bubbleThree.css('left'))/675;
+	var yPosThreeBubble =  pxToFloat(bubbleThree.css('top'))/675;
+	var widthThreeBubble =  pxToFloat(bubbleThree.css('width'))/675;
+	//var heightThreeBubble = 0;
+	
+	
+	var onResize = function(){
+		var width = ratio * document.body.clientHeight;
+		$(bgimg).css({'width' : width + 'px'
+			,'height' : document.body.clientHeight + 'px'});
+		
+		itemOne.css({'left': xPosOne * document.body.clientHeight + 'px'
+					,'top':yPosOne * document.body.clientHeight + 'px'
+					,'width': widthOne * document.body.clientHeight + 'px'
+					});
+		
+		itemTwo.css({'left': xPosTwo * document.body.clientHeight + 'px'
+					,'top':yPosTwo * document.body.clientHeight + 'px'
+					,'width': widthTwo * document.body.clientHeight + 'px'
+					});
+	
+		itemThree.css({'left': xPosThree * document.body.clientHeight + 'px'
+					,'top':yPosThree * document.body.clientHeight + 'px'
+					,'width': widthThree * document.body.clientHeight + 'px'
+					});
+
+		bubbleOne.css({'left': xPosOneBubble * document.body.clientHeight + 'px'
+					,'top':yPosOneBubble * document.body.clientHeight + 'px'
+					,'width': widthOneBubble * document.body.clientHeight + 'px'
+					});
+
+		bubbleTwo.css({'left': xPosTwoBubble * document.body.clientHeight + 'px'
+					,'top':yPosTwoBubble * document.body.clientHeight + 'px'
+					,'width': widthTwoBubble * document.body.clientHeight + 'px'
+					});
+	
+		bubbleThree.css({'left': xPosThreeBubble * document.body.clientHeight + 'px'
+					,'top':yPosThreeBubble * document.body.clientHeight + 'px'
+					,'width': widthThreeBubble * document.body.clientHeight + 'px'
+					});
+	};
+	
+	$( window ).resize(onResize);
+	
+	onResize();
+	
 
 $('#show_display_1').on('click touchend', function() {  
 	if(played === false)
@@ -56,18 +144,15 @@ var CheckShowDisplay4 = function(){
 	{
 		$('#display_3').animate({'opacity':'0'}, 500);
 		window.setTimeout(function(){$('#display_3').remove()}, 500);
-		$('#display_5').css({'opacity':'1'});
-		$('#display_5').css({'z-index':'1'});
-		$('#display_5').delay(9000).animate({'opacity':'0'}, 500);
+		// $('#display_4').css({'opacity':'1'});
+		// $('#display_4').css({'z-index':'1'});
+		// $('#display_4').delay(9000).animate({'opacity':'0'}, 500);
+
+		//$('#display_5').delay(9000).animate({'opacity':'1', 'z-index':'1'}, 0);
+		$('#display_5').animate({'opacity':'1', 'z-index':'1'}, 400);
 		$('.overflow_control').css({'overflow-x': 'hidden'});
 	}
 };
-
-		//$('#display_4').css({'opacity':'1'});
-		//$('#display_4').css({'z-index':'1'});
-		//$('#display_4').delay(9000).animate({'opacity':'0'}, 500);
-		//$('#display_5').delay(9000).animate({'opacity':'1', 'z-index':'1'}, 0);
-		//$('.overflow_control').css({'overflow-x': 'hidden'});
 
 $('#itemone').on('click touchstart', function(){
 	click_icecream = true;
