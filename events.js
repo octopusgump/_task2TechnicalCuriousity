@@ -89,12 +89,5 @@ $(document).ready(function() {
 		$('#bubblethree').animate({'opacity':'0'});
 		CheckShowDisplay4();
 	});
-	
-	
-	
-    // close event
-    // $body.on('click', '.bx-triangle', function() {
-    //     $('.bxc').removeClass('bx-impress');
-    // });
 
 });
