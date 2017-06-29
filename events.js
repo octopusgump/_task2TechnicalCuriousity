@@ -11,7 +11,7 @@ $(document).ready(function() {
 		e.preventDefault();
 	});
 	
-    $('#show_display_1').on('click touchstart', function() {  
+    $('#show_display_1').on('click touchend', function() {  
 		if(played === false)
 		{        
 			audio.play();
