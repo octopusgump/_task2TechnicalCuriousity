@@ -1,0 +1,189 @@
+
+body,html{
+    overflow: hidden;
+}
+.mdcontainer{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 83%;
+    height: 550px;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    /*background-color: #fc6b19;*/
+}
+
+.bgcontainer{
+	position: absolute;
+    cursor: pointer;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 550px;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    /*background-color: #fc6b19;*/
+}
+
+.bgcontainer h5{
+	font-family: 'Clan Pro', sans-serif;
+	font-weight: 500;
+ font-size: 13.5px; 
+ color: black; 
+}
+
+.bgcontainer img{
+	width: 100%;
+}
+
+
+/*============================*/
+.one{
+    visibility: visible;
+    z-index: 10;
+}
+.one img{
+    cursor: pointer;
+}
+.one button{
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    top: 180px;
+    left: 70px;
+    background-size: 93px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 60px;
+    border: none;
+    background-image: url(assets/1-play.gif);
+}
+
+/*============================*/
+.two{
+    opacity: 0;
+	z-index: 9;
+}
+.two button{
+    cursor: pointer;
+    height: 28px;
+    width: 200px;
+    min-width: 100px;
+    background: #000;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 400;
+    border-radius: 20px;
+}
+
+
+.twofirst{
+    opacity: 0;
+    z-index: -10;
+}
+
+
+
+/*============================*/
+.three{
+
+    opacity: 0;
+    width: 3680px;
+    height: auto;
+    overflow: hidden;
+    margin-top: -11px;
+    margin-left: -11px;
+}
+.three img{
+    width: 100%;
+    height: 100%;
+}
+/*============================*/
+
+.four{
+    opacity: 0;
+
+}
+
+.five{
+    opacity: 0;
+	z-index : -1000;
+}
+.five button{
+    cursor: pointer;
+    height: 28px;
+    width: 200px;
+    min-width: 100px;
+    background: #000;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 400;
+    border-radius: 20px;
+}
+
+.bx-impress{
+    visibility: visible;
+    -webkit-overflow-scrolling: touch;
+    pointer-events: none;
+    overflow-y: auto;
+    z-index: 10;
+}
+
+
+#bubbleone{
+    /*display: none;*/
+    width: 400px;
+    position: absolute;
+    top: 120px;
+    left: 1150px;
+	opacity: 0;	
+}
+#bubbletwo{
+    /*display: none;*/
+    width: 400px;
+    position: absolute;
+    top: 120px;
+    left: 2000px; 
+	opacity: 0;
+}
+#bubblethree{
+    /*display: none;*/
+    width: 400px;
+    position: absolute;
+    top: 120px;
+    left: 2660px; 
+	opacity: 0;
+}
+
+#itemone{
+    width: 190px;
+    position: absolute;
+    top: 290px;
+    left: 900px;
+}
+
+#itemtwo{
+    width: 230px;
+    position: absolute;
+    top: 290px;
+    left: 1780px;
+}
+
+#itemthree{
+    width: 170px;
+    position: absolute;
+    top: 200px;
+    left: 3060px; 
+}
+@media screen and (max-width: 350px) {
+
+}
