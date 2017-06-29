@@ -184,6 +184,15 @@ body {
 #caption_1{
     margin-top: 20px;
 }
+
+#slider{
+    position: fixed;
+    width: 100px;
+    z-index: 1;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 @media screen and (min-width: 650px) {
     .mdcontainer{
         width: 500px;
