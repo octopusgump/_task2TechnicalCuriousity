@@ -59,38 +59,39 @@ $(document).ready(function() {
 	
 	
 	var onResize = function(){
-		var width = ratio * document.body.clientHeight;
+		var cHeight = document.body.clientHeight - 30;
+		var width = ratio * cHeight;
 		$(bgimg).css({'width' : width + 'px'
-			,'height' : document.body.clientHeight + 'px'});
+			,'height' : cHeight + 'px'});
 		
-		itemOne.css({'left': xPosOne * document.body.clientHeight + 'px'
-					,'top':yPosOne * document.body.clientHeight + 'px'
-					,'width': widthOne * document.body.clientHeight + 'px'
+		itemOne.css({'left': xPosOne * cHeight + 'px'
+					,'top':yPosOne * cHeight + 'px'
+					,'width': widthOne * cHeight + 'px'
 					});
 		
-		itemTwo.css({'left': xPosTwo * document.body.clientHeight + 'px'
-					,'top':yPosTwo * document.body.clientHeight + 'px'
-					,'width': widthTwo * document.body.clientHeight + 'px'
+		itemTwo.css({'left': xPosTwo * cHeight + 'px'
+					,'top':yPosTwo * cHeight + 'px'
+					,'width': widthTwo * cHeight + 'px'
 					});
 	
-		itemThree.css({'left': xPosThree * document.body.clientHeight + 'px'
-					,'top':yPosThree * document.body.clientHeight + 'px'
-					,'width': widthThree * document.body.clientHeight + 'px'
+		itemThree.css({'left': xPosThree * cHeight + 'px'
+					,'top':yPosThree * cHeight + 'px'
+					,'width': widthThree * cHeight + 'px'
 					});
 
-		bubbleOne.css({'left': xPosOneBubble * document.body.clientHeight + 'px'
-					,'top':yPosOneBubble * document.body.clientHeight + 'px'
-					,'width': widthOneBubble * document.body.clientHeight + 'px'
+		bubbleOne.css({'left': xPosOneBubble * cHeight + 'px'
+					,'top':yPosOneBubble * cHeight + 'px'
+					,'width': widthOneBubble * cHeight + 'px'
 					});
 
-		bubbleTwo.css({'left': xPosTwoBubble * document.body.clientHeight + 'px'
-					,'top':yPosTwoBubble * document.body.clientHeight + 'px'
-					,'width': widthTwoBubble * document.body.clientHeight + 'px'
+		bubbleTwo.css({'left': xPosTwoBubble * cHeight + 'px'
+					,'top':yPosTwoBubble * cHeight + 'px'
+					,'width': widthTwoBubble * cHeight + 'px'
 					});
 	
-		bubbleThree.css({'left': xPosThreeBubble * document.body.clientHeight + 'px'
-					,'top':yPosThreeBubble * document.body.clientHeight + 'px'
-					,'width': widthThreeBubble * document.body.clientHeight + 'px'
+		bubbleThree.css({'left': xPosThreeBubble * cHeight + 'px'
+					,'top':yPosThreeBubble * cHeight + 'px'
+					,'width': widthThreeBubble * cHeight + 'px'
 					});
 	};
 	
@@ -115,7 +116,7 @@ $('#show_display_1').on('click touchend', function() {
 });
 
 $('#show_display_2').on('click touchend', function() {
-	onResize();
+
 	$('#display_1').stop();
 	$('#display_1').animate({"opacity": '0'}, 500);
 	window.setTimeout(function(){$('#display_1').remove()}, 500);
@@ -144,12 +145,11 @@ var CheckShowDisplay4 = function(){
 	{
 		$('#display_3').animate({'opacity':'0'}, 500);
 		window.setTimeout(function(){$('#display_3').remove()}, 500);
-		// $('#display_4').css({'opacity':'1'});
-		// $('#display_4').css({'z-index':'1'});
-		// $('#display_4').delay(9000).animate({'opacity':'0'}, 500);
+		$('#display_4').css({'opacity':'1'});
+		$('#display_4').css({'z-index':'1'});
+		$('#display_4').delay(9000).animate({'opacity':'0'}, 500);
 
-		//$('#display_5').delay(9000).animate({'opacity':'1', 'z-index':'1'}, 0);
-		$('#display_5').animate({'opacity':'1', 'z-index':'1'}, 400);
+		$('#display_5').delay(9000).animate({'opacity':'1', 'z-index':'1'}, 0);
 		$('.overflow_control').css({'overflow-x': 'hidden'});
 	}
 };
@@ -183,12 +183,12 @@ $('#itemthree').on('click touchstart', function(){
 	click_painting = true;
 	$('#bubblethree').stop();
 	$('#bubblethree').animate({'opacity':'1'});
-	CheckShowDisplay4();
 });
 
 $('#bubblethree').on('click touchstart', function(){
 	$('#bubblethree').stop();
 	$('#bubblethree').animate({'opacity':'0'});
+	CheckShowDisplay4();
 });
 
 });
