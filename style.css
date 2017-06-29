@@ -70,31 +70,34 @@
 }
 .two button{
     cursor: pointer;
-    height: 28px;
-    width: 200px;
+    height: 38px;
+    width: 190px;
     min-width: 100px;
-    background: #000;
+    background: #fff;
     border: none;
     outline: none;
-    color: white;
+    color: black;
     font-weight: 400;
+    border: 3px solid black;
     border-radius: 20px;
+    margin-top: 10px;
+    margin:auto 0 auto auto;
 }
-
 
 .twofirst{
     opacity: 0;
     z-index: -10;
 }
 
-
-
 /*============================*/
-.three{
+#display_3{
+    height: 100%;
+}
 
+.three{
     opacity: 0;
     width: 3680px;
-    height: auto;
+    height: 100%;
     overflow: hidden;
     margin-top: -11px;
     margin-left: -11px;
@@ -116,15 +119,18 @@
 }
 .five button{
     cursor: pointer;
-    height: 28px;
-    width: 200px;
+    height: 38px;
+    width: 190px;
     min-width: 100px;
-    background: #000;
+    background: #fff;
     border: none;
     outline: none;
-    color: white;
+    color: black;
     font-weight: 400;
+    border: 3px solid black;
     border-radius: 20px;
+    margin-top: 10px;
+    margin:auto 0 auto auto;
 }
 
 .bx-impress{
@@ -141,21 +147,20 @@
     position: absolute;
     top: 100px;
     left: 960px;
+    opacity: 0;
 }
 #bubbletwo{
-    /*display: none;*/
-    width: 400px;
+    width: 250px;
     position: absolute;
-    top: 120px;
-    left: 2000px; 
+    top: 105px;
+    left: 1920px;
     opacity: 0;
 }
 #bubblethree{
-    /*display: none;*/
-    width: 400px;
+    width: 220px;
     position: absolute;
-    top: 120px;
-    left: 2660px; 
+    top: 110px;
+    left: 2880px;
     opacity: 0;
 }
 

@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
 
 	var audio = new Audio('assets/1-audio.mp3');
@@ -48,6 +49,7 @@ $(document).ready(function() {
 			$('#display_4').css({'z-index':'1'});
 			$('#display_4').delay(9000).animate({'opacity':'0'}, 500);
 			$('#display_5').delay(9000).animate({'opacity':'1'}, 0);
+			$('#display_5').delay(9000).animate({'z-index':'1'}, 0);
 		}
 	};
 	
