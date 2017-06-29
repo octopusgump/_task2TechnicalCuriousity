@@ -183,12 +183,12 @@ $('#itemthree').on('click touchstart', function(){
 	click_painting = true;
 	$('#bubblethree').stop();
 	$('#bubblethree').animate({'opacity':'1'});
+	CheckShowDisplay4();
 });
 
 $('#bubblethree').on('click touchstart', function(){
 	$('#bubblethree').stop();
 	$('#bubblethree').animate({'opacity':'0'});
-	CheckShowDisplay4();
 });
 
 });
