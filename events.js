@@ -21,6 +21,7 @@ $(document).ready(function() {
 			$('#display_0').delay(audio.duration * 1000).animate({"opacity": '0'}, 600);
 			window.setTimeout(function(){ $('#display_0').remove();}, audio.duration * 1000 + 600); 
 			$('#display_1').delay(audio.duration * 1000).animate({"opacity": '1'}, 600); 
+			$('#caption_1').attr('src', 'assets/1-caption.gif');
 		}
       
     });
