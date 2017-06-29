@@ -139,10 +139,13 @@ $('#display_3').on('click touchend', function() {
 var click_icecream = false;
 var click_computer = false;
 var click_painting = false;
+var shown_display4 = false;
 
 var CheckShowDisplay4 = function(){
-	if((click_icecream === true) && (click_computer === true) && (click_painting === true))
+	if((click_icecream === true) && (click_computer === true) && (click_painting === true)
+		&& (shown_display4 === false)) 
 	{
+		window.setTimeout(function(){
 		$('#display_3').animate({'opacity':'0'}, 500);
 		window.setTimeout(function(){$('#display_3').remove()}, 500);
 		$('#display_4').css({'opacity':'1'});
@@ -151,8 +154,11 @@ var CheckShowDisplay4 = function(){
 
 		$('#display_5').delay(9000).animate({'opacity':'1', 'z-index':'1'}, 0);
 		$('.overflow_control').css({'overflow-x': 'hidden'});
+		}, 2000);
+		shown_display4 = true;
 	}
 };
+
 
 $('#itemone').on('click touchstart', function(){
 	click_icecream = true;
@@ -183,12 +189,12 @@ $('#itemthree').on('click touchstart', function(){
 	click_painting = true;
 	$('#bubblethree').stop();
 	$('#bubblethree').animate({'opacity':'1'});
+	CheckShowDisplay4();
 });
 
 $('#bubblethree').on('click touchstart', function(){
 	$('#bubblethree').stop();
 	$('#bubblethree').animate({'opacity':'0'});
-	CheckShowDisplay4();
 });
 
 });
