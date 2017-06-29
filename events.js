@@ -3,17 +3,22 @@ $(document).ready(function() {
 	var audio = new Audio('assets/1-audio.m4a');
 	var played = false;
 //================cells================
+
+	var allow_scrolling =  false;
+	
+	document.body.addEventListener('touchstart', function(e)
+	{ 
+		e.preventDefault();
+	});
+	
     $('#show_display_1').on('click touchstart', function() {  
 		if(played === false)
 		{        
 			audio.play();
 			played = true;
 			
-			// $('.one').delay(13000).css({"opacity": '0'}, 120);
-			//alert(audio.duration);
 			$('#display_0').delay(audio.duration * 1000).animate({"opacity": '0'}, 600);
-			window.setTimeout(function(){ $('#display_0').remove();}, audio.duration * 1000 + 600);
-			//$('.two').delay(13000).css({"z-index": '10'}, 120);  
+			window.setTimeout(function(){ $('#display_0').remove();}, audio.duration * 1000 + 600); 
 			$('#display_1').delay(audio.duration * 1000).animate({"opacity": '1'}, 600); 
 		}
       
