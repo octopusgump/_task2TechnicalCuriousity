@@ -190,7 +190,7 @@ body {
 
 #slider{
     position: fixed;
-    width: 100px;
+    width: 150px;
     z-index: 1;
     top: 30px;
     left: 50%;
