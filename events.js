@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	var audio = new Audio('assets/1-audio.m4a');
+	var audio = new Audio('assets/1-audio.mp3');
 	var played = false;
 //================cells================
 
