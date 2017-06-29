@@ -115,7 +115,7 @@ $('#show_display_1').on('click touchend', function() {
 });
 
 $('#show_display_2').on('click touchend', function() {
-
+	onResize();
 	$('#display_1').stop();
 	$('#display_1').animate({"opacity": '0'}, 500);
 	window.setTimeout(function(){$('#display_1').remove()}, 500);
