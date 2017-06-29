@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	var audio = new Audio('assets/night.mp3');
+	var audio = new Audio('assets/1-audio.mp3');
 	var bg = new Audio('assets/night.mp3');
 	bg.addEventListener('ended', function(){
 		this.currentTime = 0;
