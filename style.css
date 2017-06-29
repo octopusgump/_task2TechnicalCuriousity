@@ -10,6 +10,10 @@ html, body {
 body {
   position: relative
 }
+
+a {
+    text-decoration: none !important;
+}
 .mdcontainer{
     position: absolute;
     cursor: pointer;
