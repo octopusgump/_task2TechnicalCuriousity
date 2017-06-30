@@ -153,8 +153,9 @@ var CheckShowDisplay4 = function(){
 		window.setTimeout(function(){$('#display_3').remove()}, 500);
 		$('#display_4').css({'opacity':'1'});
 		$('#display_4').css({'z-index':'1'});
+		$('#four_caption').attr('src', 'assets/4-caption.gif');
+		
 		$('#display_4').delay(9000).animate({'opacity':'0'}, 500);
-
 		$('#display_5').delay(9000).animate({'opacity':'1', 'z-index':'1'}, 0);
 		$('.overflow_control').css({'overflow-x': 'hidden'});
 		}, 2000);
