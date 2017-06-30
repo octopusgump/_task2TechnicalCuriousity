@@ -107,9 +107,9 @@ $('#show_display_1').on('click touchend', function() {
 		bg.play();
 		played = true;
 
-		$('#display_0').delay(audio.duration * 1000).animate({"opacity": '0'}, 600);
+		$('#display_0').delay((audio.duration+2.00) * 1000).animate({"opacity": '0'}, 900);
 		window.setTimeout(function(){ $('#display_0').remove();}, audio.duration * 1000 + 600); 
-		$('#display_1').delay(audio.duration * 1000).animate({"opacity": '1'}, 600); 
+		$('#display_1').delay((audio.duration+1.00) * 1000).animate({"opacity": '1'}, 600); 
 		$('#caption_1').attr('src', 'assets/1-caption.gif');
 	}
 
@@ -167,23 +167,24 @@ $('#itemone').on('click touchstart', function(){
 	$('#bubbleone').animate({'opacity':'1'});
 });
 
-$('#bubbleone').on('click touchstart', function(){
-	$('#bubbleone').stop();
-	$('#bubbleone').animate({'opacity':'0'});
-	CheckShowDisplay4();
-});
+// $('#bubbleone').on('click touchstart', function(){
+// 	$('#bubbleone').stop();
+// 	$('#bubbleone').animate({'opacity':'0'});
+// 	CheckShowDisplay4();
+// });
 
 $('#itemtwo').on('click touchstart', function(){
 	click_computer = true;
 	$('#bubbletwo').stop();
 	$('#bubbletwo').animate({'opacity':'1'});
-});
-
-$('#bubbletwo').on('click touchstart', function(){
-	$('#bubbletwo').stop();
-	$('#bubbletwo').animate({'opacity':'0'});
 	CheckShowDisplay4();
 });
+
+// $('#bubbletwo').on('click touchstart', function(){
+// 	$('#bubbletwo').stop();
+// 	$('#bubbletwo').animate({'opacity':'0'});
+// 	CheckShowDisplay4();
+// });
 
 $('#itemthree').on('click touchstart', function(){
 	click_painting = true;
@@ -192,9 +193,9 @@ $('#itemthree').on('click touchstart', function(){
 	CheckShowDisplay4();
 });
 
-$('#bubblethree').on('click touchstart', function(){
-	$('#bubblethree').stop();
-	$('#bubblethree').animate({'opacity':'0'});
-});
+// $('#bubblethree').on('click touchstart', function(){
+// 	$('#bubblethree').stop();
+// 	$('#bubblethree').animate({'opacity':'0'});
+// });
 
 });

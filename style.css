@@ -1,5 +1,7 @@
 
 html, body {
+  top: 15px;
+  left: -8px;
   overflow-x: hidden;
   overflow-y: hidden;
   width: 100%;
@@ -8,7 +10,7 @@ html, body {
 }
 a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 body {
   position: relative
@@ -81,15 +83,15 @@ body {
     height: 38px;
     width: 190px;
     min-width: 100px;
-    background: #fff;
+    background: #000;
     border: none;
     outline: none;
-    color: black;
+    color: #fff;
     font-weight: 400;
     border: 3px solid black;
     border-radius: 20px;
     margin-top: 10px;
-    margin:auto 0 auto auto;
+    font-size: 14px;
 }
 
 .twofirst{
@@ -119,7 +121,29 @@ body {
 
 .four{
     opacity: 0;
+}
+#four_img {
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid black;
+}
 
+.four h4{
+    font-family: 'Clan Pro', sans-serif;
+    font-weight: 500;
+    font-size: 13.5px;
+    color: black;
+    width: 60%;
+    padding: 3px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid black;
+    margin-top: 3.5rem;
 }
 
 .five{
@@ -131,14 +155,15 @@ body {
     height: 38px;
     width: 190px;
     min-width: 100px;
-    background: #fff;
+    background: #000;
     border: none;
     outline: none;
-    color: black;
+    color: white;
     font-weight: 400;
     border: 3px solid black;
     border-radius: 20px;
     margin-top: 20px;
+    font-size: 14px;
 }
 
 #bubbleone{
@@ -190,12 +215,15 @@ body {
 
 #slider{
     position: fixed;
-    width: 150px;
+    width: 180px;
     z-index: 1;
-    top: 30px;
+    top: 60px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+
+
 @media screen and (min-width: 650px) {
     .mdcontainer{
         width: 500px;

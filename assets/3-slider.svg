@@ -1,1 +1,55 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-290 3219 210 22"><defs><style>.a{font-size:16px;font-family:PingFangSC-Regular, PingFang SC;}</style></defs><text class="a" transform="translate(-290 3219)"><tspan x="0" y="17">左右滑动屏幕查看三个失窃物</tspan></text></svg>
+<svg id="Group_827" data-name="Group 827" xmlns="http://www.w3.org/2000/svg" viewBox="-292.429 3219 269.429 86.367">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 20px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        stroke: #000;
+        stroke-width: 3px;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+
+      .cls-5 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <text id="左右滑动屏幕查看三个失窃物" class="cls-1" transform="translate(-290 3219)"><tspan x="0" y="21">左右滑动屏幕查看三个失窃物</tspan></text>
+  <g id="Group_824" data-name="Group 824" transform="translate(-203.704 3302.648) rotate(180)">
+    <g id="Rectangle_935" data-name="Rectangle 935" class="cls-2" transform="translate(-15 11.002)">
+      <rect class="cls-4" width="71.162" height="22.004"/>
+      <rect class="cls-5" x="1.5" y="1.5" width="68.162" height="19.004"/>
+    </g>
+    <path id="Path_1503" data-name="Path 1503" class="cls-2" d="M0,0,35.319,21.251,0,43.52Z" transform="translate(50.546 0)"/>
+    <rect id="Rectangle_936" data-name="Rectangle 936" class="cls-3" width="9.78" height="15.9" transform="translate(46.278 13.959)"/>
+  </g>
+  <g id="Group_825" data-name="Group 825" transform="translate(-115.569 3259.129)">
+    <g id="Rectangle_935-2" data-name="Rectangle 935" class="cls-2" transform="translate(-15 11.002)">
+      <rect class="cls-4" width="71.162" height="22.004"/>
+      <rect class="cls-5" x="1.5" y="1.5" width="68.162" height="19.004"/>
+    </g>
+    <path id="Path_1503-2" data-name="Path 1503" class="cls-2" d="M0,0,35.319,21.251,0,43.52Z" transform="translate(50.546 0)"/>
+    <rect id="Rectangle_936-2" data-name="Rectangle 936" class="cls-3" width="9.78" height="15.9" transform="translate(46.278 13.959)"/>
+  </g>
+  <g id="Group_826" data-name="Group 826" transform="translate(-2 -1)">
+    <g id="Ellipse_294" data-name="Ellipse 294" class="cls-2" transform="translate(-172 3265)">
+      <circle class="cls-4" cx="16.5" cy="16.5" r="16.5"/>
+      <circle class="cls-5" cx="16.5" cy="16.5" r="15"/>
+    </g>
+    <g id="Ellipse_295" data-name="Ellipse 295" class="cls-2" transform="translate(-164 3273)">
+      <circle class="cls-4" cx="8.5" cy="8.5" r="8.5"/>
+      <circle class="cls-5" cx="8.5" cy="8.5" r="7"/>
+    </g>
+  </g>
+</svg>

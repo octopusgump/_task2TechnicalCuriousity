@@ -1,1 +1,49 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1233.032 3212.676 315.26 409.558"><defs><style>.a{fill:#fff;stroke-width:3px;}.a,.b{stroke:#000;}.b,.d{fill:none;}.b{stroke-width:2.5px;font-size:36px;font-family:ClanPro-Medium, Clan Pro;font-weight:500;}.c{stroke:none;}</style></defs><g transform="translate(-1259 3047)"><path class="a" d="M-3.975,1.5,37.707,8.113,202.238,1.5l43.277,6.613,43.213-4.143v54.74L271.5,177.746l5.5,119.32,11.725,57.686V407.4L240,397.445l-54.773-2.781L49.9,407.4-23,397.445,3.447,323.063l3.646-166.8L1.5,116.668l8.818-48.18Z" transform="translate(51 166)"/><text class="b" transform="translate(86 195)"><tspan x="22.21" y="36">WANTED</tspan></text><g class="a" transform="translate(83 262)"><rect class="c" width="210" height="210"/><rect class="d" x="1.5" y="1.5" width="207" height="207"/></g><g class="a" transform="translate(93 272)"><rect class="c" width="190" height="190"/><rect class="d" x="1.5" y="1.5" width="187" height="187"/></g><g class="a" transform="translate(83 491)"><rect class="c" width="210" height="40"/><rect class="d" x="1.5" y="1.5" width="207" height="37"/></g><g class="a" transform="translate(52 536)"><circle class="c" cx="9.5" cy="9.5" r="9.5"/><circle class="d" cx="9.5" cy="9.5" r="8"/></g><g class="a" transform="translate(307 536)"><circle class="c" cx="9.5" cy="9.5" r="9.5"/><circle class="d" cx="9.5" cy="9.5" r="8"/></g><g class="a" transform="translate(310 185)"><circle class="c" cx="9.5" cy="9.5" r="9.5"/><circle class="d" cx="9.5" cy="9.5" r="8"/></g><g class="a" transform="translate(62 181)"><circle class="c" cx="9.5" cy="9.5" r="9.5"/><circle class="d" cx="9.5" cy="9.5" r="8"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1223.484 3213.728 303.197 406.542">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke-width: 3px;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #000;
+      }
+
+      .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke-width: 2.5px;
+        font-size: 36px;
+        font-family: ClanPro-Medium, Clan Pro;
+        font-weight: 500;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_823" data-name="Group 823" transform="translate(-1259 3047)">
+    <path id="Path_1477" data-name="Path 1477" class="cls-1" d="M-13.391,2.5l53.1,6.613L202.238,2.5l43.277,5.613L285.729,3.5,277,67.117l-5.5,110.629,5.5,119.32L271.5,349l14.2,56.4L240,397.445l-54.773-2.781L49.9,405.4l-63.295-7.951L3.447,323.063l3.646-131.27L-9.242,125.648,7.094,71.281Z" transform="translate(51 166)"/>
+    <text id="WANTED" class="cls-2" transform="translate(86 195)"><tspan x="22.21" y="36">WANTED</tspan></text>
+    <g id="Ellipse_287" data-name="Ellipse 287" class="cls-1" transform="translate(52 536)">
+      <circle class="cls-3" cx="9.5" cy="9.5" r="9.5"/>
+      <circle class="cls-4" cx="9.5" cy="9.5" r="8"/>
+    </g>
+    <g id="Ellipse_288" data-name="Ellipse 288" class="cls-1" transform="translate(303 536)">
+      <circle class="cls-3" cx="9.5" cy="9.5" r="9.5"/>
+      <circle class="cls-4" cx="9.5" cy="9.5" r="8"/>
+    </g>
+    <g id="Ellipse_289" data-name="Ellipse 289" class="cls-1" transform="translate(310 185)">
+      <circle class="cls-3" cx="9.5" cy="9.5" r="9.5"/>
+      <circle class="cls-4" cx="9.5" cy="9.5" r="8"/>
+    </g>
+    <g id="Ellipse_290" data-name="Ellipse 290" class="cls-1" transform="translate(59 184)">
+      <circle class="cls-3" cx="9.5" cy="9.5" r="9.5"/>
+      <circle class="cls-4" cx="9.5" cy="9.5" r="8"/>
+    </g>
+  </g>
+</svg>
