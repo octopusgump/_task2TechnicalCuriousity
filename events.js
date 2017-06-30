@@ -202,8 +202,7 @@ $('#itemthree').on('click touchstart', function(){
 // 	$('#bubblethree').animate({'opacity':'0'});
 // });
 $(window).load(function() {
- $('.curtain').remove();
- alert("window is loaded");
+ $('.curtain').delay(1000).remove();
 });
 	 
 });
