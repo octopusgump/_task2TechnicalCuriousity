@@ -200,5 +200,5 @@ $('#itemthree').on('click touchstart', function(){
 // 	$('#bubblethree').stop();
 // 	$('#bubblethree').animate({'opacity':'0'});
 // });
-
+	$('.curtain').remove(); 
 });
