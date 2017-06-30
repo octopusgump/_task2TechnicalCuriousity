@@ -18,14 +18,11 @@ body {
 .mdcontainer{
     position: absolute;
     cursor: pointer;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 83%;
-    height: 550px;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 81%;
     margin: auto;
-    overflow: hidden;
     text-align: center;
 }
 
@@ -125,10 +122,16 @@ body {
 #four_img {
     width: 60%;
     position: absolute;
-    top: 50%;
+    top: 53%;
     left: 50%;
     transform: translate(-50%, -50%);
     border: 3px solid black;
+}
+#four_caption{
+    width: 100%;
+    top: 0px;
+    left: 50%;
+    transform:translate(0%, -50%);
 }
 
 .four h4{

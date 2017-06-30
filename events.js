@@ -63,6 +63,8 @@ $(document).ready(function() {
 		var width = ratio * cHeight;
 		$(bgimg).css({'width' : width + 'px'
 			,'height' : cHeight + 'px'});
+		$(".three").css({'width' : width + 'px'
+			,'height' : cHeight + 'px'});
 		
 		itemOne.css({'left': xPosOne * cHeight + 'px'
 					,'top':yPosOne * cHeight + 'px'
@@ -108,6 +110,7 @@ $('#show_display_1').on('click touchend', function() {
 		played = true;
 
 		$('#display_0').delay((audio.duration+2.00) * 1000).animate({"opacity": '0'}, 900);
+		$('#news_1').remove(); 
 		window.setTimeout(function(){ $('#display_0').remove();}, audio.duration * 1000 + 600); 
 		$('#display_1').delay((audio.duration+1.00) * 1000).animate({"opacity": '1'}, 600); 
 		$('#caption_1').attr('src', 'assets/1-caption.gif');
