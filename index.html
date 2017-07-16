@@ -11,39 +11,15 @@
     <meta name="description" content="优步极简博物馆">
     <link href="style.css" rel="stylesheet" media="screen" type="text/css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="events.js" type="text/javascript"></script>
-
-     <script type="text/javascript">
-  //     wx.config({
-  //       debug: true,
-  //       appId: '<?php echo $signPackage["appId"];?>',
-  //       timestamp: '<?php echo $signPackage["timestamp"];?>',
-  //       nonceStr: '<?php echo $signPackage["nonceStr"];?>',
-  //       signature: '<?php echo $signPackage["signature"];?>',
-  //       jsApiList: [
-  //       ]
-  //   });
-  //     wx.ready(function () {
-  //       wx.onMenuShareTimeline({
-  //           title: '微信优步极简博物馆',
-  //           link: 'h5.gmta.com.cn/home/shelf/jump',
-  //           imgUrl: 'assets/favicon.png',
-  //           success: function () {
-  //               alert("分享成功");     // 用户确认分享后执行的回调函数  
-  //           },
-  //           cancel: function () {
-  //               alert("取消分享");  // 用户取消分享后执行的回调函数  
-  //           },
-  //           fail: function (res) {
-  //               alert("分享失败，请重新尝试");
-  //           }
-  //       });
-  //   });
-    </script>
 </head>
 
 <body class='overflow_control'>
     <!-- <div class="curtain"></div> -->
+    <div id="loader">
+        <div class="loadone"></div>
+        <div class="loadtwo"></div>
+    </div>
+
     <div id='display_0' class="mdcontainer one">
         <img id='show_display_1' src="assets/1-globe.gif">
         <img id="news_1" src="assets/1-ubernews.svg">
@@ -86,6 +62,13 @@
         <img src="assets/5.svg">
         <button><a href="https://dc.tt/LtN7mg4lUKW">领取乘车券直通现场</a></button>
     </div>
-
+  <script src="events.js" type="text/javascript"></script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+        $('#loader').animate({"opacity":'0'}, 1500);
+        $('#loader').css({"z-index":'-1'});
+    });
+  </script>
 </body>
+
 </html>

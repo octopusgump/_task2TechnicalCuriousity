@@ -15,6 +15,58 @@ a{
 body {
   position: relative
 }
+
+#loader {
+    position: relative;
+
+    z-index: 11;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+.loadone {
+    position: absolute;
+    border-radius: 50%;
+    background: grey;
+    opacity: .0;
+    animation: loading 1.3s .65s infinite;
+    height: 20px;
+    width: 20px;
+}
+
+.loadtwo {
+    position: absolute;
+    border-radius: 50%;
+    background: black;
+    opacity: .0;
+    animation: loading 1.3s infinite;
+    height: 20px;
+    width: 20px;
+}
+
+
+@keyframes loading {
+    0% {
+        opacity: .0;
+        transform: scale(.15);
+        box-shadow: 0 0 2px rgba(black, .1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(2);
+        box-shadow: 0 0 10px rgba(black, .1);
+    }
+    100% {
+        opacity: .0;
+        transform: scale(.15);
+        box-shadow: 0 0 2px rgba(black, .1);
+    }
+}
+
 .mdcontainer{
     position: absolute;
     cursor: pointer;
@@ -30,16 +82,16 @@ body {
     text-align: center;
     width: 100%;
     position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .bgcontainer h5{
     font-family: 'Clan Pro', sans-serif;
     font-weight: 500;
-   font-size: 13.5px; 
-   color: black; 
+    font-size: 13.5px; 
+    color: black; 
 }
 
 .bgcontainer img{
