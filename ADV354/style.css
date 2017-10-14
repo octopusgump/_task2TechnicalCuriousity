@@ -1,0 +1,121 @@
+.panel{
+	width: 1000px;
+	height: 50px;
+	text-align: center;
+	z-index: 10;
+	background-color: #00171F;
+	display: block;
+}
+.panel li{
+	float: left;
+	display: inline-block;
+	padding: 15px 15px 15px 66px;
+}
+.panel:hover{
+	cursor: pointer;
+	transition: all 400ms ease;   
+}
+div .row1{
+	display: block;
+	margin-bottom: 30px; 
+}
+div .row1 img{
+	display: block;
+	float: left;
+	width: 450px;
+	margin: 50px 60px 20px 20px;
+}
+div .row1 p{
+	padding: 11px;
+}
+div .row1 h2{
+	padding-top: 30px;
+	padding-left: 20px;
+	margin-bottom: 0;
+}
+div .row2{
+	display: block;
+}
+div .row2 img{
+	display: block;
+	float: right;
+	width: 433px;
+	margin: 70px 37px 20px 20px;
+}
+div .row2 p{
+	padding-left: 20px;
+	width: 480px;
+}
+div .row2 h2{
+	padding-top: 30px;
+	padding-left: 20px;
+}
+div .row3{
+	display: block;
+}
+div .row3 img{
+	direction: block;
+	float: left;
+	margin: 50px 37px 20px 30px;
+	width: 433px;
+}
+
+div#container{
+	width: 1000px;
+	background-color: #ffffff;
+	margin: 0 auto; 
+}
+body{
+	background-color: #ffffff;
+}
+@import url('http://fonts.googleapis.com/css?family=Lora');
+body, h1, h3, h4, h5, h6, p{
+	font-family: 'Lora', serif;
+	color: #293241; 
+	font-weight: 300;
+}
+p{
+	line-height: 23px;
+	font-size: 15px;
+}
+ul { 
+	margin: 0;
+	padding: 0;
+	list-style: none; 
+}
+li{ 
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	transition: all 0.1s;
+	list-style-type: none;
+	border: none;
+	text-align: center;
+}
+a{
+	display: inline;
+	color: #ffffff;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+	color: #00A8E8;
+	border-bottom: 2px solid #00A8E8;
+	transition: all 400ms ease;   
+}
+div .dummy{
+	clear: left;
+}
+footer{
+	color: #cccccc;
+	font-size: 14px;
+	padding: 10px 0 10px 20px;
+	margin: 28px 48px 48px 10px;
+
+	clear: right;
+}
+footer#indexfooter{
+	margin-left: 0; 	
+}
+a#selected{
+	color: #00A8E8;  
+}
