@@ -1,6 +1,66 @@
+.panel{
+	width: 1000px;
+	height: 50px;
+	text-align: center;
+	z-index: 10;
+	background-color: #00171F;
+	display: block;
+}
+.panel li{
+	float: left;
+	display: inline-block;
+	padding: 15px 15px 15px 66px;
+}
+.panel:hover{
+	cursor: pointer;
+	transition: all 400ms ease;   
+}
+div .row1{
+	display: block;
+	margin-bottom: 30px; 
+}
+div .row1 img{
+	display: block;
+	float: left;
+	width: 450px;
+	margin: 50px 60px 20px 20px;
+}
+div .row1 p{
+	padding: 11px;
+}
+div .row1 h2{
+	padding-top: 30px;
+	padding-left: 20px;
+	margin-bottom: 0;
+}
+div .row2{
+	display: block;
+}
+div .row2 img{
+	display: block;
+	float: right;
+	width: 433px;
+	margin: 70px 37px 20px 20px;
+}
+div .row2 p{
+	padding-left: 20px;
+	width: 480px;
+}
+div .row2 h2{
+	padding-top: 30px;
+	padding-left: 20px;
+}
+div .row3{
+	display: block;
+}
+div .row3 img{
+	direction: block;
+	float: left;
+	margin: 20px 0px 20px 66px;
+	width: 400px;
+}
 
-/*======common======*/
-div#bgcontainer{
+div#container{
 	width: 1000px;
 	background-color: #ffffff;
 	margin: 0 auto; 
@@ -8,9 +68,9 @@ div#bgcontainer{
 body{
 	background-color: #ffffff;
 }
-@import url('http://fonts.googleapis.com/css?family=Open+Sans');
-body, h1, h3, h4, h5, h6, p, blockquote, address, ul, li, a, span{
-	font-family: 'Open Sans', sans-serif;
+@import url('http://fonts.googleapis.com/css?family=Lora');
+body, h1, h3, h4, h5, h6, p{
+	font-family: 'Lora', serif;
 	color: #293241; 
 	font-weight: 300;
 }
@@ -40,85 +100,22 @@ a:hover{
 	text-decoration: none;
 	color: #00A8E8;
 	border-bottom: 2px solid #00A8E8;
-	transition: all 700ms ease;   
+	transition: all 400ms ease;   
 }
-
-.panel{
-	width: 1000px;
-	height: 50px;
-	text-align: center;
-	z-index: 10;
-	background-color: #00171F;
-	display: block;
-}
-.panel li{
-	float: left;
-	display: inline-block;
-	padding: 15px 15px 15px 66px;
-}
-.panel:hover{
-	cursor: pointer;
-	transition: all 700ms ease;   
-}
-
 div .dummy{
 	clear: left;
 }
-div .row1{
-	display: block;
-	margin-bottom: 30px; 
-}
-div .row1 img{
-	display: block;
-	float: left;
-	width: 440px;
-	margin: 30px 60px 20px 20px;
-}
-div .row1 p{
-	padding: 11px;
-}
-div .row1 h2{
-	padding-top: 30px;
-	padding-left: 20px;
-	margin-bottom: 0;
-}
-div .dummy{
-	float: right;
-}
-div .row2{
-	display: block;
-}
-div .row2 img{
-	display: block;
-	float: right;
-	width: 460px;
-	margin: 30px 20px 20px 20px;
-}
-div .row2 p{
-	padding-left: 20px;
-}
-div .row2 h2{
-	padding-top: 30px;
-	padding-left: 20px;
-}
-div .row3{
-	display: block;
-}
-div .row3 img{
-	direction: block;
-	float: left;
-	margin: 20px 0px 20px 70px;
-	width: 400px;
-}
-
 footer{
 	color: #cccccc;
 	font-size: 10px;
 	padding: 10px 0 10px 20px;
-	margin-top: 40px;
-	clear: both;
-}
+	margin: 28px 48px 48px 47px;
 
+	clear: right;
+}
+footer#indexfooter{
+	margin-left: 0; 	
+}
 a#selected{
 	color: #00A8E8;  
 }
